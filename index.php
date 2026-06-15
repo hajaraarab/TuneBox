@@ -54,6 +54,10 @@
                 <p>Luister live naar Belgische radio.</p>
 
                 <div class="button-grid">
+                    <button onclick="playRadio('https://icecast.omroep.nl/funx-bb-mp3')">
+                        FunX
+                    </button>
+                    
                     <button onclick="playRadio('http://icecast.vrtcdn.be/radio1-high.mp3')">
                         Radio 1
                     </button>
