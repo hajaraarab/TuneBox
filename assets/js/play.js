@@ -2,7 +2,13 @@ const ESP32_IP = "192.168.129.104";
 
 function playSong(song)
 {
-    fetch(`http://${ESP32_IP}/play?song=${song}`);
+    const mp3 =
+        "https://tunebox.hajar.aarab.kdgmt.be/songs/" + song;
+
+    fetch(
+        `http://${ESP32_IP}/play?url=` +
+        encodeURIComponent(mp3)
+    );
 }
 
 function stopSong()
